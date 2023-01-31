@@ -15,9 +15,11 @@ class MainViewController: UIViewController {
     let welcomeLabel = UILabel()
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initialize()
+        
     }
 
 
@@ -34,12 +36,12 @@ extension MainViewController{
         }
        
         view.addSubview(welcomeLabel)
-        welcomeLabel.text = "Welcome to the game"
+        welcomeLabel.text = "Welcome to the game!"
         welcomeLabel.textColor = .white
         welcomeLabel.numberOfLines = 0
         welcomeLabel.lineBreakMode = .byWordWrapping
         welcomeLabel.textAlignment = .center
-        welcomeLabel.font = UIFont.systemFont(ofSize: 54.0)
+        welcomeLabel.font = UIFont.boldSystemFont(ofSize: 54)
         welcomeLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalToSuperview().offset(92)
@@ -56,6 +58,7 @@ extension MainViewController{
             make.height.equalTo(50)
             make.left.right.equalToSuperview().inset(16)
         }
+
         view.addSubview(multiPlayerButton)
         multiPlayerButton.layer.backgroundColor = UIColor(red: 0.404, green: 0.314, blue: 0.643, alpha: 1).cgColor
         multiPlayerButton.layer.cornerRadius = 8

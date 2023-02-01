@@ -58,6 +58,7 @@ class SingleViewController: UIViewController {
         scissorsButton.backgroundColor = UIColor(red: 0.953, green: 0.949, blue: 0.973, alpha: 1)
         scissorsButton.layer.cornerRadius = 48
         scissorsButton.setTitle("✂", for: .normal)
+        scissorsButton.addTarget(self, action: #selector(moveToPick), for: .touchUpInside)
         scissorsButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 80)
         scissorsButton.snp.makeConstraints { make in
             make.height.equalTo(128)
@@ -77,6 +78,10 @@ class SingleViewController: UIViewController {
             make.right.left.equalToSuperview().inset(24)
         }
         
+    }
+    @objc func moveToPick(){
+        let pickViewController = PickViewController()
+        navigationController?.pushViewController(pickViewController, animated: true)
     }
 
 }

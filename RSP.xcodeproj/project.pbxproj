@@ -14,6 +14,7 @@
 		1D6F047729897D1600C3C7BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D6F047629897D1600C3C7BF /* Assets.xcassets */; };
 		1D6F047A29897D1600C3C7BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D6F047829897D1600C3C7BF /* LaunchScreen.storyboard */; };
 		1D99689A298ABAD8006C0F44 /* SingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D996899298ABAD8006C0F44 /* SingleViewController.swift */; };
+		1D99689D298AC377006C0F44 /* PickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D99689C298AC377006C0F44 /* PickViewController.swift */; };
 		923DC53D58E6B0B72FBECFD9 /* Pods_RSP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C659149383BE3CA3B1EB578 /* Pods_RSP.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		1D6F047929897D1600C3C7BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D6F047B29897D1600C3C7BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D996899298ABAD8006C0F44 /* SingleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewController.swift; sourceTree = "<group>"; };
+		1D99689C298AC377006C0F44 /* PickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickViewController.swift; sourceTree = "<group>"; };
 		3257282DA22F6FD8A9C40000 /* Pods-RSP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSP.release.xcconfig"; path = "Target Support Files/Pods-RSP/Pods-RSP.release.xcconfig"; sourceTree = "<group>"; };
 		5C659149383BE3CA3B1EB578 /* Pods_RSP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9536FF899878B1BC14F0C307 /* Pods-RSP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSP.debug.xcconfig"; path = "Target Support Files/Pods-RSP/Pods-RSP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			children = (
 				1D996899298ABAD8006C0F44 /* SingleViewController.swift */,
 				1D6F047129897D1400C3C7BF /* MainViewController.swift */,
+				1D99689C298AC377006C0F44 /* PickViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D99689D298AC377006C0F44 /* PickViewController.swift in Sources */,
 				1D6F047229897D1400C3C7BF /* MainViewController.swift in Sources */,
 				1D6F046E29897D1400C3C7BF /* AppDelegate.swift in Sources */,
 				1D99689A298ABAD8006C0F44 /* SingleViewController.swift in Sources */,

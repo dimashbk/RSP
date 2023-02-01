@@ -53,6 +53,7 @@ extension MainViewController{
         singlePlayerButton.layer.cornerRadius = 8
         singlePlayerButton.setTitle("Single Player", for: .normal)
         singlePlayerButton.setTitleColor(.white, for: .normal)
+        singlePlayerButton.addTarget(self, action: #selector(moveToSingle), for: .touchUpInside)
         singlePlayerButton.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(666)
             make.height.equalTo(50)
@@ -69,6 +70,10 @@ extension MainViewController{
             make.height.equalTo(50)
             make.left.right.equalToSuperview().inset(16)
         }
+    }
+    @objc func moveToSingle(){
+        let singleViewController = SingleViewController()
+        navigationController?.pushViewController(singleViewController, animated: true)
     }
     
 }

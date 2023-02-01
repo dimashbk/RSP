@@ -80,7 +80,7 @@ class SingleViewController: UIViewController {
         
     }
     @objc func moveToPick(){
-        let pickViewController = OpponentThinkViewController()
+        let pickViewController = OpponentPickViewController()
         navigationController?.pushViewController(pickViewController, animated: true)
     }
 

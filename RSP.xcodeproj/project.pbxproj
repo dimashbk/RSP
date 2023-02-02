@@ -17,6 +17,7 @@
 		1D99689D298AC377006C0F44 /* PickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D99689C298AC377006C0F44 /* PickViewController.swift */; };
 		1D9968A1298AC8D0006C0F44 /* OpponentThinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9968A0298AC8D0006C0F44 /* OpponentThinkViewController.swift */; };
 		1D9968A3298AC970006C0F44 /* OpponentPickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9968A2298AC970006C0F44 /* OpponentPickViewController.swift */; };
+		1D9968A5298B604F006C0F44 /* TieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9968A4298B604F006C0F44 /* TieViewController.swift */; };
 		923DC53D58E6B0B72FBECFD9 /* Pods_RSP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C659149383BE3CA3B1EB578 /* Pods_RSP.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		1D99689C298AC377006C0F44 /* PickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickViewController.swift; sourceTree = "<group>"; };
 		1D9968A0298AC8D0006C0F44 /* OpponentThinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpponentThinkViewController.swift; sourceTree = "<group>"; };
 		1D9968A2298AC970006C0F44 /* OpponentPickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpponentPickViewController.swift; sourceTree = "<group>"; };
+		1D9968A4298B604F006C0F44 /* TieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TieViewController.swift; sourceTree = "<group>"; };
 		3257282DA22F6FD8A9C40000 /* Pods-RSP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSP.release.xcconfig"; path = "Target Support Files/Pods-RSP/Pods-RSP.release.xcconfig"; sourceTree = "<group>"; };
 		5C659149383BE3CA3B1EB578 /* Pods_RSP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9536FF899878B1BC14F0C307 /* Pods-RSP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSP.debug.xcconfig"; path = "Target Support Files/Pods-RSP/Pods-RSP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				1D99689C298AC377006C0F44 /* PickViewController.swift */,
 				1D9968A0298AC8D0006C0F44 /* OpponentThinkViewController.swift */,
 				1D9968A2298AC970006C0F44 /* OpponentPickViewController.swift */,
+				1D9968A4298B604F006C0F44 /* TieViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				1D99689D298AC377006C0F44 /* PickViewController.swift in Sources */,
 				1D6F047229897D1400C3C7BF /* MainViewController.swift in Sources */,
 				1D9968A1298AC8D0006C0F44 /* OpponentThinkViewController.swift in Sources */,
+				1D9968A5298B604F006C0F44 /* TieViewController.swift in Sources */,
 				1D6F046E29897D1400C3C7BF /* AppDelegate.swift in Sources */,
 				1D9968A3298AC970006C0F44 /* OpponentPickViewController.swift in Sources */,
 				1D99689A298ABAD8006C0F44 /* SingleViewController.swift in Sources */,

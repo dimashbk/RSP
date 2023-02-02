@@ -7,12 +7,12 @@
 
 import UIKit
 import SnapKit
-class TieViewController: UIViewController {
+class ResultViewController: UIViewController {
     let tieLabel = UILabel()
     let scoreLabel = UILabel()
     let firstPickButton = UIButton()
     let secondPickButton = UIButton()
-    override func viewDidLoad() {
+override func viewDidLoad() {
         super.viewDidLoad()
         initiatlize()
         // Do any additional setup after loading the view.
@@ -76,11 +76,6 @@ class TieViewController: UIViewController {
         stroke.layer.borderWidth = 10
         stroke.layer.borderColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
         secondPickButton.addSubview(stroke)
-
-        
-       
-        
-        
     }
 
 }

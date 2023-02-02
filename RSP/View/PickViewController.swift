@@ -46,7 +46,6 @@ class PickViewController: UIViewController {
         view.addSubview(pickButton)
         pickButton.backgroundColor = UIColor(red: 0.953, green: 0.949, blue: 0.973, alpha: 1)
         pickButton.layer.cornerRadius = 48
-        pickButton.setTitle("✂", for: .normal)
         pickButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 80)
         pickButton.snp.makeConstraints { make in
             make.height.equalTo(128)

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D15636B298B96A700117A71 /* PassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D15636A298B96A700117A71 /* PassViewController.swift */; };
+		1D15636D298BB75300117A71 /* MultiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D15636C298BB75300117A71 /* MultiViewController.swift */; };
 		1D541E5029898D8800D4B85B /* SF-Pro-Display-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D541E4F29898D8800D4B85B /* SF-Pro-Display-Bold.ttf */; };
 		1D6F046E29897D1400C3C7BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6F046D29897D1400C3C7BF /* AppDelegate.swift */; };
 		1D6F047029897D1400C3C7BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6F046F29897D1400C3C7BF /* SceneDelegate.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		1D15636A298B96A700117A71 /* PassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassViewController.swift; sourceTree = "<group>"; };
+		1D15636C298BB75300117A71 /* MultiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiViewController.swift; sourceTree = "<group>"; };
 		1D541E4F29898D8800D4B85B /* SF-Pro-Display-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Bold.ttf"; path = "../../../../../Desktop/SF-Pro-Display-Bold.ttf"; sourceTree = "<group>"; };
 		1D6F046A29897D1400C3C7BF /* RSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D6F046D29897D1400C3C7BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				1D9968A2298AC970006C0F44 /* OpponentPickViewController.swift */,
 				1D9968A4298B604F006C0F44 /* ResultViewController.swift */,
 				1D15636A298B96A700117A71 /* PassViewController.swift */,
+				1D15636C298BB75300117A71 /* MultiViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				1D9968A5298B604F006C0F44 /* ResultViewController.swift in Sources */,
 				1D6F046E29897D1400C3C7BF /* AppDelegate.swift in Sources */,
 				1D9968A3298AC970006C0F44 /* OpponentPickViewController.swift in Sources */,
+				1D15636D298BB75300117A71 /* MultiViewController.swift in Sources */,
 				1D15636B298B96A700117A71 /* PassViewController.swift in Sources */,
 				1D99689A298ABAD8006C0F44 /* SingleViewController.swift in Sources */,
 				1D6F047029897D1400C3C7BF /* SceneDelegate.swift in Sources */,

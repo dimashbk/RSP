@@ -7,7 +7,7 @@
 
 import UIKit
 import SnapKit
-class SingleViewController: UIViewController {
+class MultiViewController: UIViewController {
     let myLabel = UILabel()
     let scoreLabel = UILabel()
     let paperBotton = UIButton()
@@ -34,7 +34,7 @@ class SingleViewController: UIViewController {
         }
         
         view.addSubview(scoreLabel)
-        scoreLabel.text = "Score 0:0"
+        scoreLabel.text = "Player 1 • Score 0:0"
         scoreLabel.textAlignment = .center
         scoreLabel.textColor = UIColor(red: 0.404, green: 0.314, blue: 0.643, alpha: 1)
         scoreLabel.font = UIFont.boldSystemFont(ofSize: 17)

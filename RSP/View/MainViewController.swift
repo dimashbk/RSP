@@ -19,7 +19,6 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initialize()
-        
     }
 
 
@@ -65,6 +64,7 @@ extension MainViewController{
         multiPlayerButton.layer.cornerRadius = 8
         multiPlayerButton.setTitle("Multi Player", for: .normal)
         multiPlayerButton.setTitleColor(.white, for: .normal)
+        multiPlayerButton.addTarget(self, action: #selector(moveToMulti), for: .touchUpInside)
         multiPlayerButton.snp.makeConstraints { make in
             make.top.equalTo(singlePlayerButton.snp.bottom).offset(10)
             make.height.equalTo(50)
@@ -74,6 +74,10 @@ extension MainViewController{
     @objc func moveToSingle(){
         let singleViewController = SingleViewController()
         navigationController?.pushViewController(singleViewController, animated: true)
+    }
+    @objc func moveToMulti(){
+        let multiViewController = MultiViewController()
+        navigationController?.pushViewController(multiViewController, animated: true)
     }
     
 }

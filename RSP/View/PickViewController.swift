@@ -58,6 +58,7 @@ class PickViewController: UIViewController {
         changeButton.setTitle("I changed my mind", for: .normal)
         changeButton.backgroundColor = UIColor(red: 0.404, green: 0.314, blue: 0.643, alpha: 1)
         changeButton.layer.cornerRadius = 8
+        changeButton.addTarget(self, action: #selector(pop), for: .touchUpInside)
         changeButton.snp.makeConstraints { make in
             make.height.equalTo(50)
             make.top.equalToSuperview().inset(754)
@@ -71,5 +72,9 @@ class PickViewController: UIViewController {
         
         
     }
+    @objc func pop(){
+        navigationController?.popViewController(animated: true)
+    }
+    
 
 }

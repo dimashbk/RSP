@@ -13,7 +13,7 @@ class SingleViewController: UIViewController {
     let paperBotton = UIButton()
     let scissorsButton = UIButton()
     let rockButton = UIButton()
-    var game = Game()
+    public var game = Game()
     override func viewDidLoad() {
         super.viewDidLoad()
         initiatlize()

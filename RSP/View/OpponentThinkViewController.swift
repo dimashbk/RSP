@@ -46,6 +46,10 @@ class OpponentThinkViewController: UIViewController {
             make.top.equalToSuperview().inset(414)
             make.right.left.equalToSuperview().inset(24)
         }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2){
+            let opponentPickVC = OpponentPickViewController()
+            self.navigationController?.pushViewController(opponentPickVC, animated: true)
+        }
         
         
     }

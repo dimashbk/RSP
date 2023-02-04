@@ -30,8 +30,6 @@ class OpponentPickViewController: UIViewController {
             make.top.equalToSuperview().offset(92)
             make.left.right.equalToSuperview().inset(16)
         }
-        
- 
         view.addSubview(pickButton)
         pickButton.backgroundColor = UIColor(red: 0.953, green: 0.949, blue: 0.973, alpha: 1)
         pickButton.layer.cornerRadius = 48
@@ -42,6 +40,10 @@ class OpponentPickViewController: UIViewController {
             make.width.equalTo(342)
             make.top.equalToSuperview().inset(414)
             make.right.left.equalToSuperview().inset(24)
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1){
+            let resultVC = ResultViewController()
+            self.navigationController?.pushViewController(resultVC, animated: true)
         }
         
 

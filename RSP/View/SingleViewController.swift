@@ -13,6 +13,7 @@ class SingleViewController: UIViewController {
     let paperBotton = UIButton()
     let scissorsButton = UIButton()
     let rockButton = UIButton()
+    var game = Game()
     override func viewDidLoad() {
         super.viewDidLoad()
         initiatlize()
@@ -82,22 +83,27 @@ class SingleViewController: UIViewController {
         }
         
     }
+    
+
     @objc func moveToPickScissors(){
         let pickViewController =
         PickViewController()
         pickViewController.pickButton.setTitle("✂", for: .normal)
+        game.user1 = User(choise: .scissors)
         navigationController?.pushViewController(pickViewController, animated: true)
     }
     @objc func moveToPickPaper(){
         let pickViewController =
         PickViewController()
         pickViewController.pickButton.setTitle("📃", for: .normal)
+        game.user1 = User(choise: .paper)
         navigationController?.pushViewController(pickViewController, animated: true)
     }
     @objc func moveToPickRock(){
         let pickViewController =
         PickViewController()
         pickViewController.pickButton.setTitle("🗿", for: .normal)
+        game.user1 = User(choise: .rock)
         navigationController?.pushViewController(pickViewController, animated: true)
     }
     

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+ 
 enum Choise{
     case scissors
     case rock

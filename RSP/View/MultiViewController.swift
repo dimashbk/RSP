@@ -7,7 +7,9 @@
 
 import UIKit
 import SnapKit
+
 class MultiViewController: UIViewController {
+    
     let myLabel = UILabel()
     let scoreLabel = UILabel()
     let paperBotton = UIButton()
@@ -55,6 +57,7 @@ class MultiViewController: UIViewController {
             make.top.equalToSuperview().offset(262)
             make.right.left.equalToSuperview().inset(24)
         }
+        
         view.addSubview(scissorsButton)
         scissorsButton.backgroundColor = UIColor(red: 0.953, green: 0.949, blue: 0.973, alpha: 1)
         scissorsButton.layer.cornerRadius = 48

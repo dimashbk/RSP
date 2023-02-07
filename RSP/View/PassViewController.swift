@@ -8,6 +8,7 @@
 import UIKit
 
 class PassViewController: UIViewController {
+    
     let myLabel = UILabel()
     let readyButton = UIButton()
     override func viewDidLoad() {

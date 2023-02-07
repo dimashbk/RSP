@@ -8,12 +8,15 @@
 import UIKit
 import SnapKit
 class SingleViewController: UIViewController {
+    
     let myLabel = UILabel()
     let scoreLabel = UILabel()
     let paperBotton = UIButton()
     let scissorsButton = UIButton()
     let rockButton = UIButton()
     var game = Game()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initiatlize()
@@ -86,24 +89,27 @@ class SingleViewController: UIViewController {
     
 
     @objc func moveToPickScissors(){
+        
         let pickViewController =
         PickViewController()
         pickViewController.pickButton.setTitle("✂", for: .normal)
-        game.user1 = User(choise: .scissors)
+        pickViewController.game.user1.choise = .scissors
         navigationController?.pushViewController(pickViewController, animated: true)
     }
     @objc func moveToPickPaper(){
+        
         let pickViewController =
         PickViewController()
         pickViewController.pickButton.setTitle("📃", for: .normal)
-        game.user1 = User(choise: .paper)
+        pickViewController.game.user1.choise = .paper
         navigationController?.pushViewController(pickViewController, animated: true)
     }
     @objc func moveToPickRock(){
+        
         let pickViewController =
         PickViewController()
         pickViewController.pickButton.setTitle("🗿", for: .normal)
-        game.user1 = User(choise: .rock)
+        pickViewController.game.user1.choise = .rock
         navigationController?.pushViewController(pickViewController, animated: true)
     }
     

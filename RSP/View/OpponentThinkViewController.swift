@@ -8,17 +8,18 @@
 import UIKit
 import SnapKit
 class OpponentThinkViewController: UIViewController {
+    
     let myLabel = UILabel()
 
     let pickButton = UIButton()
-
+    var game = Game()
     override func viewDidLoad() {
         super.viewDidLoad()
         initiatlize()
         // Do any additional setup after loading the view.
     }
     
-
+    
     private func initiatlize(){
         view.backgroundColor = .white
         self.title = "Round #1"
@@ -33,7 +34,7 @@ class OpponentThinkViewController: UIViewController {
             make.left.right.equalToSuperview().inset(16)
         }
         
-  
+        
         
         view.addSubview(pickButton)
         pickButton.backgroundColor = UIColor(red: 0.953, green: 0.949, blue: 0.973, alpha: 1)
@@ -48,6 +49,7 @@ class OpponentThinkViewController: UIViewController {
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 2){
             let opponentPickVC = OpponentPickViewController()
+            opponentPickVC.game.user1.choise = self.game.user1.choise
             self.navigationController?.pushViewController(opponentPickVC, animated: true)
         }
         

@@ -12,6 +12,7 @@ class PickViewController: UIViewController {
     let scoreLabel = UILabel()
     let pickButton = UIButton()
     let changeButton = UIButton()
+    var game = Game()
     override func viewDidLoad() {
         super.viewDidLoad()
         initiatlize()
@@ -67,6 +68,7 @@ class PickViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2)
         {
             let opponentThinkVC = OpponentThinkViewController()
+            opponentThinkVC.game.user1.choise = self.game.user1.choise
             self.navigationController?.pushViewController(opponentThinkVC, animated: true)
         }
         

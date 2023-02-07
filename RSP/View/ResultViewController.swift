@@ -8,11 +8,13 @@
 import UIKit
 import SnapKit
 class ResultViewController: UIViewController {
+    
     let tieLabel = UILabel()
     let scoreLabel = UILabel()
     let firstPickButton = UIButton()
     let secondPickButton = UIButton()
-override func viewDidLoad() {
+    var game = Game()
+    override func viewDidLoad() {
         super.viewDidLoad()
         initiatlize()
         // Do any additional setup after loading the view.
@@ -46,7 +48,7 @@ override func viewDidLoad() {
         view.addSubview(firstPickButton)
         firstPickButton.backgroundColor = UIColor(red: 0.953, green: 0.949, blue: 0.973, alpha: 1)
         firstPickButton.layer.cornerRadius = 48
-        firstPickButton.setTitle("✂", for: .normal)
+        firstPickButton.setTitle(game.user1.choise.emoji, for: .normal)
         firstPickButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 80)
         firstPickButton.snp.makeConstraints { make in
             make.height.equalTo(128)

@@ -8,8 +8,11 @@
 import UIKit
 import SnapKit
 class OpponentPickViewController: UIViewController {
+   
+    
     let myLabel = UILabel()
     let pickButton = UIButton()
+    var game = Game()
     override func viewDidLoad() {
         super.viewDidLoad()
         initiatlize()
@@ -43,6 +46,7 @@ class OpponentPickViewController: UIViewController {
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 1){
             let resultVC = ResultViewController()
+            resultVC.game.user1.choise = self.game.user1.choise
             self.navigationController?.pushViewController(resultVC, animated: true)
         }
         

@@ -26,7 +26,7 @@ class ResultViewController: UIViewController {
         self.title = "Round #1"
         
         view.addSubview(tieLabel)
-        tieLabel.text = "Tie!"
+        tieLabel.text = game.beats().state
         tieLabel.textAlignment = .center
         tieLabel.font = UIFont.boldSystemFont(ofSize: 54)
         tieLabel.snp.makeConstraints { make in
